@@ -1,0 +1,959 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <link rel="icon" type="image/x-icon" href="/favicon/Logo.png">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!--Swipper-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
+    <script src="/js/jquery.min.js"></script>
+    <!--Swipper JS-->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <title>Gambo-Supermarket</title>
+</head>
+
+<body>
+  
+    <div class="header container-fluid header-custom">
+        <div class="header-top row">
+            <div class="col-lg-2 col-sm-6">
+                <div class="right-logo-location-head">
+                    <div class="mobile-logo">
+                        <a href="#">
+                            <img src="/Images/Small-screen-gambo-logo.png" class="logo-wraper-mobile" alt="logo-image">
+                        </a>
+                    </div>
+                    <div class="logo-image">
+                        <a href="#">
+                            <img src="/Images/logo_gambo.svg" class="logo-wraper" alt="logo-image">
+                        </a>
+                    </div>
+
+
+                    <div class="dropdown location">
+                        <button class="dropbtn" > <i class="bi bi-geo-alt location-logo"></i> Gurugram </button>
+                        <div class="dropdown-content">
+                            <a href="#"><i class="bi bi-geo-alt location-logo"></i>Thailand</a>
+                            <a href="#"><i class="bi bi-geo-alt location-logo"></i>Mambai</a>
+                            <a href="#"><i class="bi bi-geo-alt location-logo"></i>Macedonia</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6 hide-mobile">
+                <div class="search-bar-wrapper">
+                    <input type="search" class="search-bar" placeholder="Search for products..">
+                    <i class="bi bi-search search-icon"></i>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-12 mobile-view">
+                <div class="right-links">
+                    <div class="hide-mobile">
+                        <a href="#"><i class="bi bi-telephone"></i> 1800-000-000</a>
+                    </div>
+                    <div class="hide-mobile">
+                        <a href="#"><i class="bi bi-gift"></i> Offers</a>
+                    </div>
+                    <div class="hide-mobile">
+                        <a href="#"><i class="bi bi-question-circle"></i> Help</a>
+                    </div>
+                    <div class="hide-mobile">
+                        <a href="#">
+                            <span class="wishlist"> <i class="bi bi-heart"></i>
+                                <span class="wishlist-counter">3</span>
+                            </span>
+                        </a>
+                    </div>
+                    <div>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="profile-dropdown"
+                                data-bs-toggle="dropdown" aria-expanded="false"> <img src="/Images/profile-img.jpg"
+                                    class="profile-logo" alt="Profile image" width="30px" height="30px">
+                                Jhon Doe
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-links" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#"><i class="bi bi-border-all"></i>Dashboard</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#"><i class="bi bi-box-seam"></i>My Ordders</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#"> <i class="bi bi-heart"></i>My wishlist</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="bi bi-cash-stack"></i></i>My Wallet</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#"><i class="bi bi-geo-alt loc-logo"></i>My
+                                        Address</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom row">
+            <div class="col-lg-2 col-sm-2  left-button">
+                <div class="select-category">
+                    <a href="#" class="select-menu"><i class="bi bi-border-all select-icon"></i> Select Category</a>
+                </div>
+                <!-- Mobile -->
+                <div class="select-category-mobile">
+                    <i class="bi bi-border-all"></i>
+                </div>
+                <div class="hidden-links-mobile">
+                    <i class="bi bi-three-dots"></i>
+                        
+                </div>
+                <!-- Mobile -->
+            </div>
+            <div class="col-lg-8 col-sm-7 hide-mobile  ">
+                <nav class="nav center-bottom-links">
+                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="#">New Products</a>
+                    <a class="nav-link" href="#">Featured Products</a>
+
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle ctsm-btn" type="button" id="profile-dropdown"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Pages
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-links" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Accaunt</a></li>
+                            <li><a class="dropdown-item" href="#">About Us</a></li>
+                            <li><a class="dropdown-item" href="#">Shop Grid</a></li>
+                            <li><a class="dropdown-item" href="#">Single Product View</a></li>
+                            <li><a class="dropdown-item" href="#">Checkout</a></li>
+                            <li><a class="dropdown-item" href="#">Product Request</a></li>
+                            <li><a class="dropdown-item" href="#">Order Placed</a></li>
+                            <li><a class="dropdown-item" href="#">Bill Slip</a></li>
+                            <li><a class="dropdown-item" href="#">Sing In</a></li>
+                            <li><a class="dropdown-item" href="#">Sing Up</a></li>
+                            <li><a class="dropdown-item" href="#">Forrgot Password</a></li>
+                            <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                        </ul>
+
+                    </div>
+
+                    <div class="dropdown drop-down-head-bottom custom-btn ">
+                        <button class="btn btn-head-bottom btn-secondary dropdown-toggle" type="button"
+                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Blog
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </div>
+                    <a class="nav-link" href="#">Contact Us</a>
+                </nav>
+            </div>
+            <div class="col-lg-2 col-sm-2 hidden-links-mobile-bottom" style="padding-right: 0;">
+                <div class="right-button">
+                <div class="cart">
+                    <i class="bi bi-cart"></i> Cart <i class="bi bi-arrow-down-short"></i>
+                </div>  
+                <div class="cart-mobile">
+                    <i class="bi bi-cart3"></i> 2 
+                </div>
+                <div class="hidden-search">
+                    <i class="bi bi-search"></i>
+                 </div>
+               </div>
+               
+            </div>
+           
+        </div>
+    </div>
+    <!--.....................Bilboard - Offers.................................-->
+    <div class="content">
+    <section class="slide-products container mt-4">
+        <div class="product-offer-slide row">
+            <div class="col-md-3 col-xs-12">
+                <div class="product-offer">
+                    <div class="product-image-offers">
+                        <img src="/Images/offer-1.jpg" alt="eggs">
+                    </div>
+                    <div class="offers">
+                        <div class="discount"><span>6% off</span></div>
+                        <div class="title"><span>Buy More save more</span></div>
+                        <div class="type"><span>Beverages</span></div>
+                    </div>
+                    <div class="shop-now-btn"><a href="#"><span>Shop now</span></a></div>
+
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-12">
+                <div class="product-offer">
+                    <div class="product-image-offers">
+                        <img src="/Images/offer-2.jpg" alt="eggs">
+                    </div>
+                    <div class="offers">
+                        <div class="discount">6% OFF</div>
+                        <div class="title">Buy More save more</div>
+                        <div class="type">Fresh Vegetables</div>
+                    </div>
+                    <div class="shop-now-btn"><a href="#">Shop now</a></div>
+
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-12">
+                <div class="product-offer">
+                    <div class="product-image-offers">
+                        <img src="/Images/offer-3.jpg" alt="eggs">
+                    </div>
+                    <div class="offers">
+                        <div class="discount">6% OFF</div>
+                        <div class="title">Buy More save more</div>
+                        <div class="type">Daily Essentials Eggs & Dairy</div>
+                    </div>
+                    <div class="shop-now-btn"><a href="#">Shop now</a></div>
+
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-12">
+                <div class="product-offer">
+                    <div class="product-image-offers">
+                        <img src="/Images/offer-4.jpg" alt="eggs">
+                    </div>
+                    <div class="offers">
+                        <div class="discount">6% OFF</div>
+                        <div class="title">Buy More save more</div>
+                        <div class="type">Beverages</div>
+                    </div>
+                    <div class="shop-now-btn"><a href="#">Shop now</a></div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!--............................-- Little - Categories -----..............................-->
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-12">
+                <div class="shop-by-category">
+                    <div class="title-shop">
+                        <span>Shop by</span>
+                        <h2>Categories</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <div class="category-wrapper-shop">
+                    <div class="btn-right"><button class="btn-right-click"><i
+                                class="bi bi-arrow-right-short"></i></button></div>
+                    <div class="btn-left"><button class="btn-left-click"><i class="bi bi-arrow-left-short"></i></button>
+                    </div>
+                    <div class="categgory-item">
+                        <a href="#">
+                            <div class="category-item-image">
+                                <img src="/Icons/007-groceries.png">
+                            </div>
+                            <h4>Продукти</h4>
+                        </a>
+                    </div>
+                    <div class="categgory-item">
+                        <a href="#">
+                            <div class="category-item-image">
+                                <img src="/Icons/icon-6.svg">
+                            </div>
+                            <h4>Home Care</h4>
+                        </a>
+                    </div>
+                    <div class="categgory-item">
+                        <a href="#">
+                            <div class="category-item-image">
+                                <img src="/Icons/031-vegetable.png">
+                            </div>
+                            <h4>Vegetables & Fruits</h4>
+                        </a>
+                    </div>
+                    <div class="categgory-item">
+                        <a href="#">
+                            <div class="category-item-image">
+                                <img src="/Icons/icon-6.svg">
+                            </div>
+                            <h4>Home Care</h4>
+                        </a>
+                    </div>
+                    <div class="categgory-item">
+                        <a href="#">
+                            <div class="category-item-image">
+                                <img src="/Icons/icon-6.svg">
+                            </div>
+                            <h4>Home Care</h4>
+                        </a>
+                    </div>
+                    <div class="categgory-item">
+                        <a href="#">
+                            <div class="category-item-image">
+                                <img src="/Icons/icon-6.svg">
+                            </div>
+                            <h4>Home Care</h4>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--....................... Big-Offers ...............................-->
+    <section class="container top-featured-products mt-5">
+        <p>For You</p>
+        <h2>Top Featured Products</h2>
+        <div class="products-wraper row">
+            <div class=" col-md-3 col-xs-12">
+                <div class="product">
+                    <div class="product-image">
+                        <a href="#">
+                            <img src="/Images/pick-one.jpg" alt="Карфиол">
+                        </a>
+                    </div>
+                    <div class="product-text">
+                        <div class="product-avalibility">Avalibal</div>
+                        <div class="product-title">Јајца</div>
+                        <div class="product-price">
+                            <span class="new-price">15$</span>
+                            <span class="old-price">20$</span>
+                        </div>
+                    </div>
+                    <div class="product-floating-items">
+                        <span class="discount-ammount">6% off</span>
+                        <span class="add-to-wishlist-icon"><i class="bi bi-heart"></i></span>
+                    </div>
+                    <div class="place-order">
+                        <div class="row quantity-item">
+                            <input type="button" id="lower" value="-">
+                            <input type="number" id="quantity" value="1">
+                            <input type="button" id="add-quan" value="+">
+
+                        </div>
+                        <div class="add-to-cart"><i class="bi bi-cart"></i></div>
+                    </div>
+                </div>
+
+            </div>
+            <div class=" col-md-3 col-xs-12">
+                <div class="product">
+                    <div class="product-image">
+                        <a href="#">
+                            <img src="/Images/pick-two.jpg" alt="eggs">
+                        </a>
+                    </div>
+                    <div class="product-text">
+                        <div class="product-avalibility">Avalibal</div>
+                        <div class="product-title">Јајца</div>
+                        <div class="product-price">
+                            <span class="new-price">15$</span>
+                            <span class="old-price">20$</span>
+                        </div>
+                    </div>
+                    <div class="product-floating-items">
+                        <span class="discount-ammount">6% off</span>
+                        <span class="add-to-wishlist-icon"><i class="bi bi-heart"></i></span>
+                    </div>
+                    <div class="place-order">
+                        <div class="row quantity-item">
+                            <input type="button" id="lower" value="-">
+                            <input type="number" id="quantity" value="1">
+                            <input type="button" id="add-quan" value="+">
+
+                        </div>
+                        <div class="add-to-cart"><i class="bi bi-cart"></i></div>
+                    </div>
+                </div>
+
+            </div>
+            <div class=" col-md-3 col-xs-12">
+                <div class="product">
+                    <div class="product-image">
+                        <a href="#">
+                            <img src="/Images/pick-three.jpg" alt="eggs">
+                        </a>
+                    </div>
+                    <div class="product-text">
+                        <div class="product-avalibility">Avalibal</div>
+                        <div class="product-title">Јајца</div>
+                        <div class="product-price">
+                            <span class="new-price">15$</span>
+                            <span class="old-price">20$</span>
+                        </div>
+                    </div>
+                    <div class="product-floating-items">
+                        <span class="discount-ammount">6% off</span>
+                        <span class="add-to-wishlist-icon"><i class="bi bi-heart"></i></span>
+                    </div>
+                    <div class="place-order">
+                        <div class="row quantity-item">
+                            <input type="button" id="lower" value="-">
+                            <input type="number" id="quantity" value="1">
+                            <input type="button" id="add-quan" value="+">
+
+                        </div>
+                        <div class="add-to-cart"><i class="bi bi-cart"></i></div>
+                    </div>
+                </div>
+
+            </div>
+            <div class=" col-md-3 col-xs-12">
+                <div class="product">
+                    <div class="product-image">
+                        <a href="#">
+                            <img src="/Images/pick-four.jpg" alt="eggs">
+                        </a>
+                    </div>
+                    <div class="product-text">
+                        <div class="product-avalibility">Avalibal</div>
+                        <div class="product-title">Јајца</div>
+                        <div class="product-price">
+                            <span class="new-price">15$</span>
+                            <span class="old-price">20$</span>
+                        </div>
+                    </div>
+                    <div class="product-floating-items">
+                        <span class="discount-ammount">6% off</span>
+                        <span class="add-to-wishlist-icon"><i class="bi bi-heart"></i></span>
+                    </div>
+                    <div class="place-order">
+                        <div class="row quantity-item">
+                            <input type="button" id="lower" value="-">
+                            <input type="number" id="quantity" value="1">
+                            <input type="button" id="add-quan" value="+">
+
+                        </div>
+                        <div class="add-to-cart"><i class="bi bi-cart"></i></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="container bilboard-product mt-5">
+        <div class="bilboard-text">
+            <p>Offers</p>
+            <h2>Best Values</h2>
+        </div>
+        <div class="row">
+            <div class="bildoard-wraper ">
+                <div class="col-lg-4 col-md-6">
+                    <div class="offers-bilboard">
+                        <a href="#">
+                            <img src="/Images/bilboard-offer-1 .jpg" alt="Offer One">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="offers-bilboard">
+                        <a href="#">
+                            <img src="/Images/bilboard-offer-2.jpg" alt="Offer One">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="offers-bilboard">
+                        <a href="#">
+                            <img src="/Images/bilboard-offer-3.jpg" alt="Offer One">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="offer-four">
+                    <a href="#">
+                        <img src="/Images/bilboard-offer-4.jpg" alt="Offer One">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!----------------------------Big Offers ------------------------------------------>
+    <section class="container top-featured-products mt-5">
+        <p>For You</p>
+        <h2>Top Featured Products</h2>
+        <div class="products-wraper row">
+            <div class=" col-md-3 col-xs-12">
+                <div class="product">
+                    <div class="product-image">
+                        <a href="#">
+                            <img src="/Images/pick-one.jpg" alt="Карфиол">
+                        </a>
+                    </div>
+                    <div class="product-text">
+                        <div class="product-avalibility">Avalibal</div>
+                        <div class="product-title">Јајца</div>
+                        <div class="product-price">
+                            <span class="new-price">15$</span>
+                            <span class="old-price">20$</span>
+                        </div>
+                    </div>
+                    <div class="product-floating-items">
+                        <span class="discount-ammount">6% off</span>
+                        <span class="add-to-wishlist-icon"><i class="bi bi-heart"></i></span>
+                    </div>
+                    <div class="place-order">
+                        <div class="row quantity-item">
+                            <input type="button" id="lower" value="-">
+                            <input type="number" id="quantity" value="1">
+                            <input type="button" id="add-quan" value="+">
+
+                        </div>
+                        <div class="add-to-cart"><i class="bi bi-cart"></i></div>
+                    </div>
+                </div>
+
+            </div>
+            <div class=" col-md-3 col-xs-12">
+                <div class="product">
+                    <div class="product-image">
+                        <a href="#">
+                            <img src="/Images/pick-two.jpg" alt="eggs">
+                        </a>
+                    </div>
+                    <div class="product-text">
+                        <div class="product-avalibility">Avalibal</div>
+                        <div class="product-title">Јајца</div>
+                        <div class="product-price">
+                            <span class="new-price">15$</span>
+                            <span class="old-price">20$</span>
+                        </div>
+                    </div>
+                    <div class="product-floating-items">
+                        <span class="discount-ammount">6% off</span>
+                        <span class="add-to-wishlist-icon"><i class="bi bi-heart"></i></span>
+                    </div>
+                    <div class="place-order">
+                        <div class="row quantity-item">
+                            <input type="button" id="lower" value="-">
+                            <input type="number" id="quantity" value="1">
+                            <input type="button" id="add-quan" value="+">
+
+                        </div>
+                        <div class="add-to-cart"><i class="bi bi-cart"></i></div>
+                    </div>
+                </div>
+
+            </div>
+            <div class=" col-md-3 col-xs-12">
+                <div class="product">
+                    <div class="product-image">
+                        <a href="#">
+                            <img src="/Images/pick-three.jpg" alt="eggs">
+                        </a>
+                    </div>
+                    <div class="product-text">
+                        <div class="product-avalibility">Avalibal</div>
+                        <div class="product-title">Јајца</div>
+                        <div class="product-price">
+                            <span class="new-price">15$</span>
+                            <span class="old-price">20$</span>
+                        </div>
+                    </div>
+                    <div class="product-floating-items">
+                        <span class="discount-ammount">6% off</span>
+                        <span class="add-to-wishlist-icon"><i class="bi bi-heart"></i></span>
+                    </div>
+                    <div class="place-order">
+                        <div class="row quantity-item">
+                            <input type="button" id="lower" value="-">
+                            <input type="number" id="quantity" value="1">
+                            <input type="button" id="add-quan" value="+">
+
+                        </div>
+                        <div class="add-to-cart"><i class="bi bi-cart"></i></div>
+                    </div>
+                </div>
+
+            </div>
+            <div class=" col-md-3 col-xs-12">
+                <div class="product">
+                    <div class="product-image">
+                        <a href="#">
+                            <img src="/Images/pick-four.jpg" alt="eggs">
+                        </a>
+                    </div>
+                    <div class="product-text">
+                        <div class="product-avalibility">Avalibal</div>
+                        <div class="product-title">Јајца</div>
+                        <div class="product-price">
+                            <span class="new-price">15$</span>
+                            <span class="old-price">20$</span>
+                        </div>
+                    </div>
+                    <div class="product-floating-items">
+                        <span class="discount-ammount">6% off</span>
+                        <span class="add-to-wishlist-icon"><i class="bi bi-heart"></i></span>
+                    </div>
+                    <div class="place-order">
+                        <div class="row quantity-item">
+                            <input type="button" id="lower" value="-">
+                            <input type="number" id="quantity" value="1">
+                            <input type="button" id="add-quan" value="+">
+
+                        </div>
+                        <div class="add-to-cart"><i class="bi bi-cart"></i></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!--------------------------- Big-Offers ---------------------------------------------------------->
+    <section class="container top-featured-products mt-5 last-product">
+        <p>For You</p>
+        <h2>Top Featured Products</h2>
+        <div class="products-wraper row">
+            <div class=" col-md-3 col-xs-12">
+                <div class="product">
+                    <div class="product-image">
+                        <a href="#">
+                            <img src="/Images/pick-one.jpg" alt="Карфиол">
+                        </a>
+                    </div>
+                    <div class="product-text">
+                        <div class="product-avalibility">Avalibal</div>
+                        <div class="product-title">Јајца</div>
+                        <div class="product-price">
+                            <span class="new-price">15$</span>
+                            <span class="old-price">20$</span>
+                        </div>
+                    </div>
+                    <div class="product-floating-items">
+                        <span class="discount-ammount">6% off</span>
+                        <span class="add-to-wishlist-icon"><i class="bi bi-heart"></i></span>
+                    </div>
+                    <div class="place-order">
+                        <div class="row quantity-item">
+                            <input type="button" id="lower" value="-">
+                            <input type="number" id="quantity" value="1">
+                            <input type="button" id="add-quan" value="+">
+
+                        </div>
+                        <div class="add-to-cart"><i class="bi bi-cart"></i></div>
+                    </div>
+                </div>
+
+            </div>
+            <div class=" col-md-3 col-xs-12">
+                <div class="product">
+                    <div class="product-image">
+                        <a href="#">
+                            <img src="/Images/pick-two.jpg" alt="eggs">
+                        </a>
+                    </div>
+                    <div class="product-text">
+                        <div class="product-avalibility">Avalibal</div>
+                        <div class="product-title">Јајца</div>
+                        <div class="product-price">
+                            <span class="new-price">15$</span>
+                            <span class="old-price">20$</span>
+                        </div>
+                    </div>
+                    <div class="product-floating-items">
+                        <span class="discount-ammount">6% off</span>
+                        <span class="add-to-wishlist-icon"><i class="bi bi-heart"></i></span>
+                    </div>
+                    <div class="place-order">
+                        <div class="row quantity-item">
+                            <input type="button" id="lower" value="-">
+                            <input type="number" id="quantity" value="1">
+                            <input type="button" id="add-quan" value="+">
+
+                        </div>
+                        <div class="add-to-cart"><i class="bi bi-cart"></i></div>
+                    </div>
+                </div>
+
+            </div>
+            <div class=" col-md-3 col-xs-12">
+                <div class="product">
+                    <div class="product-image">
+                        <a href="#">
+                            <img src="/Images/pick-three.jpg" alt="eggs">
+                        </a>
+                    </div>
+                    <div class="product-text">
+                        <div class="product-avalibility">Avalibal</div>
+                        <div class="product-title">Јајца</div>
+                        <div class="product-price">
+                            <span class="new-price">15$</span>
+                            <span class="old-price">20$</span>
+                        </div>
+                    </div>
+                    <div class="product-floating-items">
+                        <span class="discount-ammount">6% off</span>
+                        <span class="add-to-wishlist-icon"><i class="bi bi-heart"></i></span>
+                    </div>
+                    <div class="place-order">
+                        <div class="row quantity-item">
+                            <input type="button" id="lower" value="-">
+                            <input type="number" id="quantity" value="1">
+                            <input type="button" id="add-quan" value="+">
+
+                        </div>
+                        <div class="add-to-cart"><i class="bi bi-cart"></i></div>
+                    </div>
+                </div>
+
+            </div>
+            <div class=" col-md-3 col-xs-12">
+                <div class="product">
+                    <div class="product-image">
+                        <a href="#">
+                            <img src="/Images/pick-four.jpg" alt="eggs">
+                        </a>
+                    </div>
+                    <div class="product-text">
+                        <div class="product-avalibility">Avalibal</div>
+                        <div class="product-title">Јајца</div>
+                        <div class="product-price">
+                            <span class="new-price">15$</span>
+                            <span class="old-price">20$</span>
+                        </div>
+                    </div>
+                    <div class="product-floating-items">
+                        <span class="discount-ammount">6% off</span>
+                        <span class="add-to-wishlist-icon"><i class="bi bi-heart"></i></span>
+                    </div>
+                    <div class="place-order">
+                        <div class="row quantity-item">
+                            <input type="button" id="lower" value="-">
+                            <input type="number" id="quantity" value="1">
+                            <input type="button" id="add-quan" value="+">
+
+                        </div>
+                        <div class="add-to-cart"><i class="bi bi-cart"></i></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <div class="footer-first-row">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6">
+                        <div class="contact-footer">
+                            <span class="nummber-footer"><i class="bi bi-telephone-fill"></i> 1800-000-000</span>
+                            <span class="contact-footer"><i class="bi bi-envelope"></i> info@gambosupermarket.com</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="media-links">
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-twitter"></i></a>
+                            <a href="#"><i class="bi bi-linkedin"></i></a>
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                            <a href="#"><i class="bi bi-pinterest"></i></a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-second-row">
+            <div class="container">
+                <di class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="second-row-items">
+                            <h4>Categories</h4>
+                            <ul class="listed-links">
+                                <li> <a href="#">Fruits and Vegetables</a></li>
+                                <li> <a href="#">Grocery & Staples</a></li>
+                                <li> <a href="#">Dairy & Eggs</a></li>
+                                <li> <a href="#">Beverages</a></li>
+                                <li> <a href="#">Snacks</a></li>
+                                <li> <a href="#">Home Care</a></li>
+                                <li> <a href="#">Noodles & Sauces</a></li>
+                                <li> <a href="#">Personal Care</a></li>
+                                <li> <a href="#">Pet Care</a></li>
+                                <li> <a href="#">Electronics</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="second-row-items">
+                            <h4>Useful Links</h4>
+                            <ul class="listed-links">
+                                <li> <a href="#">About US</a></li>
+                                <li> <a href="#">Featured Products</a></li>
+                                <li> <a href="#">Offers</a></li>
+                                <li> <a href="#">Blog</a></li>
+                                <li> <a href="#">Snacks</a></li>
+                                <li> <a href="#">Faq</a></li>
+                                <li> <a href="#">Careers</a></li>
+                                <li> <a href="#">Personal Care</a></li>
+                                <li> <a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="second-row-items">
+                            <h4>Top Cities</h4>
+                            <ul class="listed-links">
+                                <li> <a href="#"> Gurugram</a></li>
+                                <li> <a href="#">New Delhi</a></li>
+                                <li> <a href="#">Bangaluru</a></li>
+                                <li> <a href="#">Mumbai</a></li>
+                                <li> <a href="#">Hyderabad</a></li>
+                                <li> <a href="#">Kolkata</a></li>
+                                <li> <a href="#">Ludhiana</a></li>
+                                <li> <a href="#">Chandigrah</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="second-row-items">
+                            <div class="download-footer">
+                                <h4>Download App</h4>
+                                <div class="img-appstore">
+                                    <a href="#">
+                                        <img src="/Images/download-appstore.svg">
+                                    </a>
+                                </div>
+                                <div class="img-appstore">
+                                    <a href="#">
+                                        <img src="/Images/download-playstore.svg">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="payment-opptions">
+                            <h4>Payment Method</h4>
+                            <div class="row">
+                                <div class="payment-cards">
+                                    <div class="cards card-1">
+                                        <img src="/Images/pyicon-1.svg">
+                                    </div>
+                                    <div class=" cards card-2">
+                                        <img src="/Images/pyicon-2.svg">
+                                    </div>
+                                    <div class="cards card-3">
+                                        <img src="/Images/pyicon-3.svg">
+                                    </div>
+                                    <div class="cards card-4">
+                                        <img src="/Images/pyicon-4.svg">
+                                    </div>
+                                    <div class="cards card-5">
+                                        <img src="/Images/pyicon-6.svg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="newsletter">
+                            <h4>Newsletter</h4>
+                            <div class="newsletter-input">
+                                <span> <input type="search" class="search-newsletter">
+                                    <button type="submit" class="btn-newsletter"><i class="bi bi-send"></i></button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </di>
+            </div>
+        </div>
+        <div class="footer-third-row" style="margin-top: 50px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-mg-12">
+                        <div class="footer-last-links">
+                            <p> About </p>
+                            <p>Contact</p>
+                            <p>Privacy Policy</p>
+                            <p>Term & Conditions</p>
+                            <p>Refund & Return Policy</p>
+                        </div>
+                        </br>
+                        <div class="footer-copyright">
+                            <p><i class="bi bi-heart-pulse"></i> Copyright 2020 <b> Gambolthemes</b> . All rights
+                                reserved</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+    <!-- Category-Pop-Up -->
+    <div class="category-pop-up hidden">
+        <div class="category-pop-up-wrapper">
+            <div class="exit-category">X</div>
+            <div class="headline-pop-up">
+                <h2 id="txt-headline">Select Category</h2>
+            </div>
+            <div class="category-items">
+                <div class="category-item-products">
+                    <div class="categoy-pop-up-icon"><img id="fit-img" src="/Icons/icon-9.svg"></div>
+                    <div class="category-pop-up-text">Dog Food</div>
+                </div>
+                <div class="category-item-products">
+                    <div class="categoy-pop-up-icon"><img id="fit-img" src="/Icons/icon-6.svg"></div>
+                    <div class="category-pop-up-text">Dog Food</div>
+                </div>
+                <div class="category-item-products">
+                    <div class="categoy-pop-up-icon"><img id="fit-img" src="/Icons/icon-1.svg"></div>
+                    <div class="category-pop-up-text">Dog Food</div>
+                </div>
+                <div class="category-item-products">
+                    <div class="categoy-pop-up-icon"><img id="fit-img" src="/Icons/icons8-grocery-60.png"></div>
+                    <div class="category-pop-up-text">Dog Food</div>
+                </div>
+                <div class="category-item-products">
+                    <div class="categoy-pop-up-icon"><img id="fit-img" src="/Icons/icon-9.svg"></div>
+                    <div class="category-pop-up-text">Dog Food</div>
+                </div>
+                <div class="category-item-products">
+                    <div class="categoy-pop-up-icon"><img id="fit-img" src="/Icons/icon-9.svg"></div>
+                    <div class="category-pop-up-text">Dog Food</div>
+                </div>
+                <div class="category-item-products">
+                    <div class="categoy-pop-up-icon"><img id="fit-img" src="/Icons/icon-9.svg"></div>
+                    <div class="category-pop-up-text">Dog Food</div>
+                </div>
+                <div class="category-item-products">
+                    <div class="categoy-pop-up-icon"><img id="fit-img" src="/Icons/icon-9.svg"></div>
+                    <div class="category-pop-up-text">Dog Food</div>
+                </div>
+                <div class="category-item-products">
+                    <div class="categoy-pop-up-icon"><img id="fit-img" src="/Icons/icon-9.svg"></div>
+                    <div class="category-pop-up-text">Dog Food</div>
+                </div>
+
+            </div>
+            <div class="more-category"><i class="bi bi-border-all select-icon"></i>More Category</div>
+        </div>
+    </div>
+<!-- Mobile Links shown -->
+   
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

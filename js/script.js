@@ -1,0 +1,30 @@
+$(document).ready(function(){
+    $(".hidden").hide();
+    $(".select-category").click(function(){
+        if($(".category-pop-up").hasClass(".hidden")){
+            $(this).removeClass(".hidden");
+        } else{
+            $(".hidden").show(200);
+        }
+    });
+});
+$(document).ready(function(){
+    $(".exit-category").click(function(){ 
+        $(".hidden").hide(200);
+    });
+   $(".more-category").click(function(){
+      $(".category-pop-up").hide();
+   });
+});
+$(document).ready(function(){
+    if($(".selected").click(function(){
+              if($(".dropdown-pages-list").hasClass(".hidden")){
+                  $(this).removeClass(".hidden");
+              }
+    }));
+});
+$(document).ready(function(){
+    $(".select-category-mobile").click(function(){
+        $(".category-pop-up").show();
+    });
+});
